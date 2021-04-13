@@ -1,0 +1,84 @@
+body {
+  margin: 8px;
+}
+.card {
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	min-width: 0;
+	margin-bottom: 1.5rem;
+	word-wrap: break-word;
+	background-clip: border-box;
+	border: #d8dbe0 1px solid;
+ 	border-radius: .25rem;
+	background-color: #fff;
+	box-shadow: 0 1px 1px 0 rgba(60,75,100,.14), 0 2px 1px -1px rgba(60,75,100,.12), 0 1px 3px 0 rgba(60,75,100,.2);
+}
+.card-header-actions {
+	display: inline-block;
+	float: right;
+ 	margin-right: -.25rem;
+}
+.card-header:first-child {
+	border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+}
+.card-header {
+ 	padding: .75rem 1.25rem;
+	margin-bottom: 0;
+	background-color: #efefef;
+	line-height: 30px;
+}
+.card-body {
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	min-height: 1px;
+	padding: 1.25rem;
+}
+button {
+	border-radius: 0.25rem;
+	background: #0f798c;
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	margin: 1px 2px;
+	border-width: 0px;
+	font-weight: bold;
+	cursor: pointer;
+}
+button:hover {
+	background: #1d899c;
+}
+.btn {
+	background: #4d545c;
+}
+.btn:hover {
+	background: #1d899c;
+}
+.btn-yellow {
+	background: #f2b318 !important;
+	color: #000;
+}
+.btn-yellow:hover {
+	background: #cc9306 !important;
+}
+@media only screen and (min-width: 1030px) and (max-width: 1366px) {} 
+@media (max-width:1700px) and (min-width:1500px) {}
+@media (max-width:1180px) {}
+@media (max-width:812px) {}
+@media (max-width:575px) {
+	.column {width:100% !important;}
+	.card-body {padding: .75rem;}
+	.table-responsive{
+    	width: 100%;
+    	margin-bottom: 15px;
+    	overflow-y: hidden;
+    	-ms-overflow-style: -ms-autohiding-scrollbar;
+    	border: 1px solid #ddd;
+	}
+}
